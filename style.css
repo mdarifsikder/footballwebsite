@@ -1,0 +1,208 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: #c0bfbf;
+}
+
+/* css for banner */
+
+header {
+  background: #2d25a0;
+}
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+.banner_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.banner_wrap h1 {
+  font-size: 64px;
+  color: white;
+}
+.banner_wrap button {
+  background: #e02c6d;
+  color: white;
+  padding: 15px 35px;
+  border: none;
+  margin-top: 20px;
+}
+.banner_wrap button:hover {
+  background: #e75188;
+  color: rgb(221, 211, 211);
+  padding: 15px 35px;
+  border: none;
+  margin-top: 20px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.banner_text {
+  align-self: center;
+}
+.banner_img {
+  max-width: 556px;
+  height: 438px;
+}
+
+/* css for players section */
+
+.players {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.players {
+  max-width: 1080px;
+  margin: 70px auto 0 auto;
+}
+.player {
+  background: white;
+  padding: 15px;
+  margin: 15px;
+}
+.player img {
+  height: 256px;
+  width: 100%;
+}
+.player h3 {
+  font-size: 28px;
+  color: #18191f;
+}
+.player p {
+  color: #6c6c6c;
+}
+
+/* highlights css */
+.highlights{  
+  max-width: 1080px;
+  margin: auto;
+}
+.highlights_wrap{
+  margin-top: 198px;
+  margin-bottom: 155.42px;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.highlight_text {
+  align-self: center;
+  margin-right: 33px;
+}
+.highlight_text h1{
+  font-size: 48px;
+  color: #0A0826;
+}
+.highlight_text p{
+  color: #6C6C6C;
+}
+.highlight_text button {
+  background: #e02c6d;
+  color: white;
+  padding: 15px 35px;
+  border: none;
+  margin-top: 20px;
+}
+.highlight_text button:hover {
+  background: #e75188;
+  color: rgb(221, 211, 211);
+  padding: 15px 35px;
+  border: none;
+  margin-top: 20px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.highlight_img img {
+  max-width: 567px;
+  margin-left: 33px;
+}
+
+/* css for footer */
+
+footer {
+  background: white;
+}
+.footer_img {
+  display: flex;
+  justify-content: center;
+}
+footer img {
+  max-width: 483.87px;
+  height: 213px;
+}
+footer .social_icons {
+  display: flex;
+  justify-content: center;
+  
+}
+footer .social_icons .fab {
+  background: #d5d5db;
+  padding: 15px;
+  font-size: 18px;
+  margin: 14px;
+  border-radius: 50%;
+  color: #969bab;
+  display: inline-block;
+}
+footer .social_icons .fab:hover {
+  transition: all 1s;
+  transform: rotate(360deg);
+}
+footer p {
+  text-align: center;
+  padding-bottom: 78px;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* media query css */
+
+@media (max-width: 768px) {
+  header  h1{
+    font-size: 36px;
+  }  
+  .banner_wrap {
+    display: block;
+    max-width: 90%;
+    font-size: 30px;
+    text-align: center;
+  }
+  .banner_img {
+    margin-top: 50px;
+    max-width: 90%;
+    height: auto;
+  }
+  /* css for .players */
+  .players {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+  .players article {
+    max-width: 100%;
+  }
+
+  /* css for highlights */
+  .highlights_wrap{
+    display: block;
+    margin-top: 60px;
+  }
+  .highlight_text {
+    margin-right: 0;
+  }
+  .highlight_img img {
+    margin-top: 20px;
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  /* css for footer */
+  footer img {
+    max-width: 90%;
+  }
+}
